@@ -11,8 +11,7 @@ Custom post type for short oneliners, including a widget and shortcode.
 
 == Description ==
 
-A custom post type, shortcode, and widget to display random one-line quips on your site. Can be used for random
-quotes, jokes, etc.
+A custom post type, shortcode, and widget to display random one-line quips on your site. Can be used for random quotes, jokes, etc.
 
 == Installation ==
 
@@ -29,8 +28,7 @@ e.g.
 
 random-oneliner
 
-Any of the usual parameters that can be passed to [WP_Query()](http://codex.wordpress.org/Class_Reference/WP_Query#Parameters)
-are valid, with the exception of 'post_type'. In addition, the 'display_as_link' parameter can be set to 'true' or 'false' to output the oneliner with it's permalink.
+Any of the usual parameters that can be passed to [WP_Query()](http://codex.wordpress.org/Class_Reference/WP_Query#Parameters) are valid, with the exception of 'post_type'. In addition, the 'display_as_link' parameter can be set to 'true' or 'false' to output the oneliner with it's permalink.
 
 == Changelog ==
 
