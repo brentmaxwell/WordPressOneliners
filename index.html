@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Wordpressoneliners : A WordPress plugin for snappy oneliners">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Wordpressoneliners</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/brentmaxwell/WordPressOneliners">View on GitHub</a>
+
+          <h1 id="project_title">Wordpressoneliners</h1>
+          <h2 id="project_tagline">A WordPress plugin for snappy oneliners</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/brentmaxwell/WordPressOneliners/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/brentmaxwell/WordPressOneliners/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <p>=== One-liners ===
+Contributors: thebrent
+Tags: one liners, quotes, widgets, shortcodes
+Requires at least: 3.0.1
+Tested up to: 4.11
+Stable tag: 3.1.0
+License: GPLv2
+License URI: <a href="http://www.gnu.org/licenses/gpl-2.0.html">http://www.gnu.org/licenses/gpl-2.0.html</a></p>
+
+<p>Custom post type for short oneliners, including a widget and shortcode.</p>
+
+<p>== Description ==</p>
+
+<p>A custom post type, shortcode, and widget to display random one-line quips on your site. Can be used for random quotes, jokes, etc.</p>
+
+<p>== Installation ==</p>
+
+<ol>
+<li>Upload the contents of the zip file to the <code>/wp-content/plugins/</code> directory or use the WordPress plugin uploader.</li>
+<li>Activate the plugin through the 'Plugins' menu in WordPress</li>
+</ol>
+
+<p>== Frequently Asked Questions ==</p>
+
+<p>= What is the format and parameters for the shortcode? =</p>
+
+<pre><code>random-oneliner
+</code></pre>
+
+<p>The shortcode can take any parameters that the <a href="http://codex.wordpress.org/Class_Reference/WP_Query#Parameters"><code>WP_Query()</code></a> object can take, with the exception of <code>post_type</code>. The defaults are: <code>posts_per_page="1" orderby="rand"</code></p>
+
+<p>In addition, the <code>display_as_link</code> parameter can be set to <code>true</code> to output the oneliner with it's permalink.</p>
+
+<p>== Changelog ==</p>
+
+<p>= 3.1.0 =</p>
+
+<ul>
+<li>Added options for custom slug</li>
+</ul>
+
+<p>= 3.0.0 =</p>
+
+<ul>
+<li>Total and complete update</li>
+<li>Renamed to One Liners</li>
+<li>Restructured the base class</li>
+<li>Created a dedicated widget class</li>
+<li>Activation/deactivation hook</li>
+<li>Options for displaying quote as link</li>
+</ul>
+
+<p>= 2.0.0 =</p>
+
+<ul>
+<li>Updated names and post type cause it was more clear</li>
+</ul>
+
+<p>= 1.1.1 =</p>
+
+<ul>
+<li>security update on shortcode</li>
+</ul>
+
+<p>= 1.1.0 =</p>
+
+<ul>
+<li>added initialization hook: thebrent_oneliners_init;</li>
+<li>added three filter hooks: thebrent_oneliners_random_quote_args, thebrent_oneliners_random_quote, thebrent_oneliners_show;</li>
+<li>added the ability to parametarize the shortcode</li>
+</ul>
+
+<p>= 1.0.0 =</p>
+
+<ul>
+<li>moved everything into a class; added internationalization capability</li>
+</ul>
+
+<p>= 0.4.0 =</p>
+
+<ul>
+<li>added widget</li>
+</ul>
+
+<p>= 0.3.0 =</p>
+
+<ul>
+<li>added shortcode</li>
+</ul>
+
+<p>= 0.2.2 =</p>
+
+<ul>
+<li>added post type icon</li>
+</ul>
+
+<p>= 0.2.1 =</p>
+
+<ul>
+<li>added menu icons</li>
+</ul>
+
+<p>= 0.2.0 =</p>
+
+<ul>
+<li>not sure why it went to 1.1, but it did</li>
+</ul>
+
+<p>= 0.1.0 =</p>
+
+<ul>
+<li>First stable working version</li>
+</ul>
+
+<p>== Upgrade Notice ==</p>
+
+<p>= 3.0.0 =
+This update will completely break compatibility with previous versions. The name has been changed to prevent conflicts, and there was a complete rebuild of the class structure.</p>
+
+<p>= 1.1.1 =
+This update fixes a security issue where the shortcode parameters could be used to query any post type in the system.</p>
+
+<p>== Use and Options ==</p>
+
+<p>= Options =
+Options are accessible under the 'Oneliners' menu. The only option is the slug for the post type.</p>
+
+<p>= Widget =
+The widget has only two options: "Title" and "Display as permalink".</p>
+
+<p>= Shortcode =
+    random-oneliner</p>
+
+<p>The shortcode can take any parameters that the <a href="http://codex.wordpress.org/Class_Reference/WP_Query#Parameters"><code>WP_Query()</code></a> object can take, with the exception of <code>post_type</code>. The defaults are: <code>posts_per_page="1" orderby="rand"</code></p>
+
+<p>In addition, the <code>display_as_link</code> parameter can be set to <code>true</code> to output the oneliner with it's permalink.</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Wordpressoneliners maintained by <a href="https://github.com/brentmaxwell">brentmaxwell</a></p>
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
